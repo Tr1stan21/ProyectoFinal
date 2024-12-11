@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	height: 15vh;
+	display: flex;
+	background-color: black;
+	color: white;
+	align-items: center;
+}
+
+#logoheader {
+	height: 15vh;
+}
+
+h1 {
+	padding-left: 2vw;
+	font-size: 7vh;
+}
+
+nav {
+	height: 7.5vh;
+	display: flex;
+	justify-content: center;
+	background-color: #212121;
+	color: white;
+}
+
+a {
+	height: 7.5vh;
+	width: 8vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	font-size: 2vh;
+}
+
+.nav:hover {
+	background-color: #3a3939;
+}
+
+main {
+	height: 65vh;
+}
+
+footer {
+	padding-left: 1vw;
+	height: 12.5vh;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#logofooter {
+	height: 6vh;
+	padding-bottom: 1vh;
+}
+
+p {
+	font-size: 2vh;
+}
+
+#disclaimer {
+	width: 50vw;
+}
+
+#redes {
+	padding-left: 2vw;
+	display: flex;
+}
+
+.redesimg {
+	height: 6vh;
+}
+
+.redeslink {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 3vw;
+	margin: 1vw;
+}
