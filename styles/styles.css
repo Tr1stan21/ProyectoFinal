@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Fondamento&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,18 +16,15 @@ header {
 	background-color: black;
 	color: white;
 	align-items: center;
+	justify-content: space-between;
 }
 
-#logoheader {
+.imgheader {
 	height: 15vh;
 }
 
-h1 {
-	padding-left: 2vw;
-	font-size: 7vh;
-}
-
 nav {
+	font-family: "Texturina";
 	height: 7.5vh;
 	display: flex;
 	justify-content: center;
@@ -41,6 +40,7 @@ a {
 	justify-content: space-around;
 	color: white;
 	font-size: 2vh;
+	text-decoration: none;
 }
 
 .nav:hover {
@@ -48,7 +48,18 @@ a {
 }
 
 main {
-	height: 65vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sobrenosotros {
+	width: 60vw;
+	height: 25vh;
+	margin: 1vh;
+	background-color: aqua;
 }
 
 footer {
@@ -59,6 +70,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-family: "Segoe UI", Tahoma;
 }
 
 #logofooter {
@@ -67,11 +79,11 @@ footer {
 }
 
 p {
-	font-size: 2vh;
+	font-size: 1.75vh;
 }
 
 #disclaimer {
-	width: 50vw;
+	width: 42vw;
 }
 
 #redes {
@@ -89,4 +101,8 @@ p {
 	align-items: center;
 	width: 3vw;
 	margin: 1vw;
+}
+
+#diseñado {
+	padding-top: 1vh;
 }

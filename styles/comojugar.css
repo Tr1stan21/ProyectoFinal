@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Main Container Sections */
+body {
+	display: flex;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1; /* Distribute sections evenly */
+	transition: all 0.5s ease-in-out;
+}
+
+section:hover {
+	flex: 2; /* Expand section on hover */
+}
+
+/* History Section */
+.history {
+	background-image: url("https://cdn.pixabay.com/photo/2018/12/12/10/21/cognac-3870510_960_720.jpg");
+	opacity: 0.3;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	transition: all 0.5s ease-in-out;
+}
+
+.history:hover {
+	opacity: 1;
+}
+
+/* Introduction Section */
+.introduccion {
+	background-image: url("https://images.pexels.com/photos/3279685/pexels-photo-3279685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+	flex: 2;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	transition: all 0.5s ease-in-out;
+}
+
+.introduccion:hover {
+	flex: 3;
+}
+
+/* Fundamentals Section */
+.fundamentos {
+	background-image: url("https://images.pexels.com/photos/279009/pexels-photo-279009.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+	opacity: 0.3;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	transition: all 0.5s ease-in-out;
+}
+
+.fundamentos:hover {
+	opacity: 1;
+}
+
+/* Heading Styles */
+h1 {
+	font-family: serif;
+	font-style: oblique;
+	font-size: 5vh; /* Added unit for font-size */
+	opacity: 0.8;
+	position: relative;
+	text-shadow: 2px 2px 4px #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+
+h1:hover {
+	color: ghostwhite;
+	opacity: 0.9;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+a {
+	text-decoration: none;
+	opacity: inherit;
+	color: black;
+}
