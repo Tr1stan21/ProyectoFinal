@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Poker Royal</title>
-		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/inscripcion.css" />
 	</head>
 
 	<body>
@@ -20,11 +20,57 @@
 		<nav>
 			<a href="index.html" class="nav">INICIO</a>
 			<a href="comojugar.html" class="nav">CÓMO JUGAR</a>
-			<a href="torneos.html" class="nav">TORNEOS</a>
 			<a href="inscripcion.html" class="nav">INSCRIPCIÓN</a>
 		</nav>
 
-		<main>asds</main>
+		<main>
+			<section>
+				<h1>Solicitud de inscripción</h1>
+				<form action="/action_page.php">
+					<label for="nombre">Nombre completo</label>
+					<input
+						type="text"
+						id="nombre"
+						name="nombre"
+						placeholder="Tu nombre"
+						required
+						pattern="([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*)|(([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*)\s([a-zñáéíóú]+\s)*([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*))"
+					/>
+
+					<label for="email">Correo electrónico</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Tu correo electrónico"
+						required
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+					/>
+
+					<label for="telefono">Teléfono</label>
+					<input
+						type="tel"
+						id="telefono"
+						name="telefono"
+						placeholder="Tu teléfono"
+						required
+						pattern="\d{9}"
+					/>
+
+					<label for="experiencia">Nivel de experiencia</label>
+					<select id="experiencia" name="experiencia" required>
+						<option value="principiante">Principiante</option>
+						<option value="intermedio">Intermedio</option>
+						<option value="avanzado">Avanzado</option>
+					</select>
+
+					<button type="submit">Inscribirse</button>
+				</form>
+				<p id="dudas">
+					¿Tienes dudas? <a href="#" id="contacto">Contáctanos</a>
+				</p>
+			</section>
+		</main>
 
 		<footer>
 			<article>

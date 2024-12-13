@@ -62,80 +62,75 @@ a {
 
 main {
 	width: 100%;
+	font-family: "Roboto", sans-serif;
+	background-color: var(--blanco);
+	color: var(--blanco);
 	display: flex;
-	justify-content: space-around;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 section {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-}
-
-.izquierda {
-	height: 8vh;
-	display: flex;
-	justify-content: right;
-}
-
-.esquinaabajo {
-	height: 8vh;
-	width: auto;
-	transform: rotate(180deg);
-}
-
-.esquinaarriba {
-	height: 8vh;
-}
-
-.carta {
+	background-color: var(--grisclaro);
+	padding: 2vw;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 	width: 30vw;
-	height: 85vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 0.75vh solid var(--negro);
-	border-radius: 2vh;
-	padding: 1.5vh;
 }
 
-.subtitulo {
+h1 {
 	font-family: "Teko";
-	font-size: 4vh;
+	font-size: 5vh;
+	text-align: center;
+	margin-bottom: 2.5vh;
 }
 
-.subsubtitulo {
-	font-size: 2.75vh;
-	padding-top: 1vh;
+label {
+	display: block;
+	margin-bottom: 1vh;
+	font-weight: 700;
 }
 
-.texto {
-	font-family: "Roboto";
-	font-size: 2.25vh;
+input,
+select,
+button {
+	width: 100%;
+	padding: 1vh;
+	margin-bottom: 2vh;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.75vh;
 }
 
-li {
-	margin-left: 1.75vw;
+input,
+select {
+	background-color: var(--gris);
+	color: var(--blanco);
 }
 
-ul {
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+button {
+	background-color: var(--negro);
+	color: var(--blanco);
+	font-family: "Texturina";
+	font-weight: 900;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
-#mapa {
-	width: 30vw;
-	height: 85vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+button:hover {
+	background-color: var(--blanco);
+	color: var(--gris);
 }
 
-iframe {
-	width: 30vw;
-	height: 50vh;
+#dudas {
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+#contacto {
+	color: var(--blanco);
+	text-decoration: underline;
 }
 
 footer {
@@ -223,22 +218,18 @@ footer {
 		align-items: center;
 	}
 
-	.carta {
+	section {
 		width: 90%;
-		height: auto;
-		margin-bottom: 3vh;
 	}
 
-	#mapa {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		height: 50vh;
+	h1 {
+		font-size: 4vh;
 	}
 
-	iframe {
-		width: 90vw;
-		height: 40vh;
+	input,
+	select,
+	button {
+		font-size: 1.5vh;
 	}
 
 	footer {
@@ -270,5 +261,9 @@ footer {
 
 	.redeslink {
 		margin: 1vh;
+	}
+
+	#contacto {
+		margin-top: 1.5vh;
 	}
 }
